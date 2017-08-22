@@ -1,0 +1,1 @@
+This is the API for the full-stack garden project for WDI. 
