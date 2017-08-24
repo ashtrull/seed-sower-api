@@ -1,4 +1,5 @@
-<% project_name = 'rails-api-template' %>
+<% project_name = 'garden-project-api' %>
+# ERB tag ^
 
 default: &default
   adapter: postgresql
