@@ -2,6 +2,7 @@
 # Do not inherit from this class unless you know what you're doing
 # See ProtectedController and OpenReadController
 class ApplicationController < ActionController::API
+  # ActionController::API is part of Rails
   # Force to wants JSON for API
   before_action :api_request_settings
   def api_request_settings
@@ -25,6 +26,7 @@ class ApplicationController < ActionController::API
   end
 
   # call from actions to get authenticated user (or nil)
+  # can reference :current_user in other controllers
   attr_reader :current_user
 
   # call from unauthenticated actions that want current_user if available

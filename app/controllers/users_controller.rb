@@ -1,5 +1,8 @@
 # frozen_string_literal: true
+
 class UsersController < ProtectedController
+  # you can't be authenticated if you don't have an account yet, that's why
+  # auth is not required for signup and signin
   skip_before_action :authenticate, only: [:signup, :signin]
 
   # POST '/sign-up'

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
+
 class ExamplesController < OpenReadController
+  # OpenReadController means things do not require an authentication to access
   before_action :set_example, only: [:update, :destroy]
 
   # GET /examples
