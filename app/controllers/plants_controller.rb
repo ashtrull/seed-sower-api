@@ -35,16 +35,24 @@ class PlantsController < ApplicationController
   # DELETE /plants/1
   def destroy
     @plant.destroy
+
+    head :no_content
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_plant
-      @plant = Plant.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def plant_params
-      params.require(:plant).permit(:name, :indoor_start, :growth_period, :outdoor_start)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_plant
+    @plant = Plant.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def plant_params
+    params.require(:plant).permit(
+      :name,
+      :indoor_start,
+      :growth_period,
+      :outdoor_start
+    )
+  end
 end

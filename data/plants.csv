@@ -1,0 +1,18 @@
+name,indoor_start,growth_period,outdoor_start
+Beets,Direct sow outdoors,nil,-14
+Broccoli,-56,42,-14
+Brussel Sprouts,-63,42,-21
+Cabbage,-63,42,-21
+Carrots,Direct sow outdoors,nil,-10
+Cauliflower,-49,35,-14
+Collards,-63,35,-28
+Corn,-7,21,14
+Cucumber,-11,21,10
+Eggplant,-35,56,21
+Lettuce,Direct sow outdoors,nil,-28
+Onion,Direct sow outdoors,nil,-10
+Peas,Direct sow outdoors,nil,-35
+Peppers,-49,63,14
+Radish,Direct sow outdoors,nil,-25
+Spinach,Direct sow outdoors,nil,-35
+Tomato,-42,49,7
