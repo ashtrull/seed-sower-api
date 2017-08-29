@@ -1,3 +1,3 @@
 class GardenSerializer < ActiveModel::Serializer
-  attributes :id, :email, :garden_name, :garden_city, :garden_state
+  attributes :id, :user_id, :plant_id
 end

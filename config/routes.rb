@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 Rails.application.routes.draw do
   # resources :plants, only: [:index]
-  resources :gardens, only: [:index]
   resources :users
   resources :examples, except: [:new, :edit]
   post '/sign-up' => 'users#signup'
@@ -10,4 +9,5 @@ Rails.application.routes.draw do
   patch '/change-password/:id' => 'users#changepw'
   resources :users, only: [:index, :show]
   resources :plants, except: [:new, :edit]
+  resources :gardens, except: [:new, :edit]
 end
