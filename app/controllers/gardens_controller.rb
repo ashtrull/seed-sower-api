@@ -1,10 +1,12 @@
-class GardensController < ApplicationController
-  before_action :set_garden, only: [:show, :update, :destroy]
+# frozen_string_literal: true
+
+class GardensController < OpenReadController
+  before_action :set_garden, only: %i[show update destroy]
 
   # GET /gardens
   def index
-    @gardens = Garden.all
-
+    user = current_user
+    @gardens = Garden.where('user_id=?',user.id)
     render json: @gardens
   end
 
@@ -15,7 +17,13 @@ class GardensController < ApplicationController
     render json: @garden
   end
 
+  # def showgarden
+  #   # Based this code on Coptia's resolution on Issue #772
+  #   @user_garden = Garden.where('user_id = ?', current_user.id)
+  #   render json: @user_garden
+  # end
   # POST /gardens
+
   def create
     @garden = Garden.new(garden_params)
 
@@ -41,13 +49,14 @@ class GardensController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_garden
-      @garden = Garden.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def garden_params
-      params.require(:garden).permit(:user_id, :plant_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_garden
+    @garden = Garden.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def garden_params
+    params.require(:garden).permit(:user_id, :plant_id)
+  end
 end

@@ -72,5 +72,9 @@ class UsersController < ProtectedController
           .permit(:old, :new)
   end
 
+  # def user_params
+  #   params.require(:user).permit(:id)
+  # end
+
   private :user_creds, :pw_creds
 end
