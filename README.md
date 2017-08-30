@@ -8,8 +8,8 @@ This Seed Sower app was developed through the Web Development Immersive at Gener
 The game was developed in multiple phases:
 
 1. Wire-framing and planning
-  - I designed a couple sketch wireframes with pen and paper to identify what the game interface would generally look like
-  - I drafted user stories to think about what players would want and need to be able to do in order for the game to be functional and enjoyable.
+  - I designed a couple sketch wireframes with pen and paper to identify what the user interface would generally look like
+  - I drafted user stories to think about what users would want and need to be able to do in order for the game to be functional and enjoyable.
       - "As a user I want to be able to search for seed start dates for the plants I want to growso I know when to plant them"
       - "As a user I want to be able to save information about the plants I want to grow so that I can come back to them in the future."
       - "As a user I want to be able to plan the order of my plantings so that I knwo which plants to prioritize"
