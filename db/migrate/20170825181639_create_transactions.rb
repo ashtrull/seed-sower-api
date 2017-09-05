@@ -5,6 +5,7 @@ class CreateTransactions < ActiveRecord::Migration[5.0]
       t.integer :indoor_start
       t.integer :growth_period
       t.integer :outdoor_start
+      t.string :plantnote
 
       t.timestamps
     end
