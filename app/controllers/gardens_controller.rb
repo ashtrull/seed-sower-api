@@ -26,9 +26,8 @@ class GardensController < OpenReadController
 
   def create
     @garden = Garden.new(garden_params)
-
     if @garden.save
-      render json: @garden, status: :created, location: @garden
+      render json: @garden, status: :created
     else
       render json: @garden.errors, status: :unprocessable_entity
     end
