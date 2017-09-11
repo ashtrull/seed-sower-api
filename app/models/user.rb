@@ -2,6 +2,6 @@
 
 class User < ApplicationRecord
   include Authentication
-  has_many :gardens, dependent: :destroy
+  has_one :garden, dependent: :destroy
   has_many :plants, through: :gardens
 end

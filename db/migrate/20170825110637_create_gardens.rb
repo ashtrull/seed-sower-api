@@ -5,6 +5,7 @@ class CreateGardens < ActiveRecord::Migration[5.0]
     create_table :gardens do |t|
       t.references :user, foreign_key: true
       t.references :plant, foreign_key: true
+      t.string :notes
 
       t.timestamps
     end
