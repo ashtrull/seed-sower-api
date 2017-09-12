@@ -17,13 +17,6 @@ class GardensController < OpenReadController
     render json: @garden
   end
 
-  # def showgarden
-  #   # Based this code on Coptia's resolution on Issue #772
-  #   @user_garden = Garden.where('user_id = ?', current_user.id)
-  #   render json: @user_garden
-  # end
-  # POST /gardens
-
   def create
     @garden = Garden.new(garden_params)
     if @garden.save
@@ -56,7 +49,6 @@ class GardensController < OpenReadController
 
   # Only allow a trusted parameter "white list" through.
   def garden_params
-    # params.require(:garden).permit(:id)
     params.require(:garden).permit(:user_id, :plant_id, :notes)
   end
 end

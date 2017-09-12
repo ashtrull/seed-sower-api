@@ -10,7 +10,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "garden": {
       "user_id": "'"${USERID}"'",
-      "plant_id": "'"${PLANTID}"'"
+      "plant_id": "'"${PLANTID}"'",
+      "notes": "'"${NOTES}"'"
     }
   }'
 

@@ -9,7 +9,9 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=$TOKEN" \
   --data '{
     "garden": {
-      "notes": "'"${NOTES}"'"
+      "user-id": "'"${USERID}"'",
+      "plant-id": "'"${PLANTID}"'",
+      "notes":"'"${NOTES}"'"
     }
   }'
 
