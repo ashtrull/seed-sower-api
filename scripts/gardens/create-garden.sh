@@ -1,5 +1,5 @@
 #!/bin/bash
-#API="${API_ORIGIN:-http://localhost:4741}"
+# API="${API_ORIGIN:-http://localhost:4741}"
 API="${API_ORIGIN:-https://seedsower.herokuapp.com}"
 URL_PATH="/gardens"
 curl "${API}${URL_PATH}" \
@@ -10,7 +10,8 @@ curl "${API}${URL_PATH}" \
   --data '{
     "garden": {
       "user_id": "'"${USERID}"'",
-      "plant_id": "'"${PLANTID}"'"
+      "plant_id": "'"${PLANTID}"'",
+      "notes": "'"${NOTES}"'"
     }
   }'
 
