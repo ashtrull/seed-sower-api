@@ -5,8 +5,7 @@ class GardensController < OpenReadController
 
   # GET /gardens
   def index
-    user = current_user
-    @gardens = Garden.where('user_id=?', user.id)
+    @gardens = Garden.where('user_id = ?', current_user.id)
     render json: @gardens
   end
 
