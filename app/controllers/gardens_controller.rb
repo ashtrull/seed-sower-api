@@ -12,7 +12,7 @@ class GardensController < OpenReadController
     @user = current_user
     @gardens = @user.gardens
     respond_to do |format|
-      format.json { render :json => @gardens.to_json(include: :plant :notes) }
+      format.json { render :json => @gardens.to_json(include: :plant ) }
     end
   end
 
