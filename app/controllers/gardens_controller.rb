@@ -1,14 +1,11 @@
 # frozen_string_literal: true
 
-require 'pry'
-
 class GardensController < OpenReadController
   before_action :set_garden, only: %i[show update destroy]
   include ActionController::MimeResponds
 
   # GET /gardens
   def index
-    binding.pry
     @user = current_user
     @gardens = @user.gardens
     respond_to do |format|
