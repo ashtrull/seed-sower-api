@@ -8,9 +8,11 @@ class GardensController < OpenReadController
   def index
     @user = current_user
     @gardens = @user.gardens
-    respond_to do |format|
-      format.json { render :json => @gardens.to_json(include: :plant ) }
-    end
+    # to include plant info in json response?
+    # respond_to do |format|
+    #   format.json { render :json => @gardens.to_json(include: :plant ) }
+    # end
+    render json: @gardens
   end
 
   # GET /gardens/1
