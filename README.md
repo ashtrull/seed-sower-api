@@ -36,6 +36,21 @@ The game was developed in multiple phases:
   - Develop each function one-by-one to first build a click handler in index.js, then the events.js response to the click handler, then the ajax query in my api.js file, and then finally the user interface function in my ui.js This was the most challenging part for me.
   - Trying and checking each of the steps until my HTML, JavaScript, and Ruby/Rails  were working smoothly together, which took multiple attempts on each one.
   - Using handlebars to display information queried from the API on the HTML page.
+  
+## API routes
+
+| Action  | Method | URL | Controller Action |
+| ------------- | ------------- | ------------- | ------------- |
+| User Signup | POST | /sign-up | users#signup |
+| User Signin | POST | /sign-in | users#signin |
+| User Signout | DELETE | /sign-out/:id | users#signout |
+| User Change Password | PATCH | /change-password/:id | users#changepw |
+| Create Garden | POST | /gardens | gardens#create |
+| Update Garden | PATCH | /gardens/:id | gardens#update |
+| Show Garden | GET | /gardens/ | gardens#index |
+| Delete Garden | DELETE | /gardens/:id | gardens#destroy |
+
+
 
 ## Unsolved Problems
 The minimum structure of the is mostly complete but still needs work on a few features:
