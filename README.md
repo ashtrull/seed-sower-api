@@ -54,12 +54,10 @@ The game was developed in multiple phases:
 
 ## Unsolved Problems
 The minimum structure of the is mostly complete but still needs work on a few features:
-1. Remove From Garden feature
-  - This feature is currently not functioning, but when functional will allow users to remove plants from "My Garden".
-2. CSS Design
+1. CSS Design
   - The CSS Design has not been completed for a smooth and cohesive design. When complete, the game will be responsive and mobile-friendly, the design will be symmetrical and elements will be fixed in their position, and there will be more images.
-3. Update CRUD feature
-  - I have not yet completed an UPDATE action for my database because I did not want users to be able to update data in the plants or gardens table. However, eventually I am going to have users input their frost date to get custom planting dates, and they will be able to update their frost date.
+2. Display of data
+  - I am looking to build out the My Garden table to show users the names of the plants in their garden as well as the relevant planting information
 
 ## Hopes for the Future
 Looking forward, I am really excited to continue to work on this project to add the following features:
