@@ -1,11 +1,11 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Seed Sower
-This Seed Sower app was developed through the Web Development Immersive at General Assembly. The game uses HTML, CSS, Javascript, and Ruby on Rails to create a resource app that helps users plan their garden.
+This Seed Sower app was developed through the Web Development Immersive at General Assembly. This app uses HTML, CSS, Javascript, and Ruby on Rails to create a resource app that helps users plan their garden.
 
 
 ## Development Process
-The game was developed in multiple phases:
+Seed Sower was developed in multiple phases:
 
 1. Wire-framing and planning
   - I designed a couple sketch wireframes with pen and paper to identify what the user interface would generally look like
